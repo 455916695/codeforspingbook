@@ -1,36 +1,86 @@
 package com.ax.offer.twodimensionalarray;
 
 /**
- *    二、题目
- *      在一个长度为 n 的数组里的所有数字都在 0 到 n-1 的范围内。
- *      数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。
- *      请找出数组中任意一个重复的数字。
+ *  在一个二维数组中，每一行都按照从左到右递增的顺序排序，
+ *  每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+ *
+ *
  * */
 public class TwoDimensionalArray {
-    /**
-     *  思路：遍历数组，判断遍历的值是否与被遍历数据的索引值对应，如果相等就进行下一次循环，如果不相等，就判断对应索引上的值是否与本值相等，如果相等就返回，不相等就交换
-     *
-     * */
-    public static  Integer findRepetitionNum(int[] numArray ){
 
-        if(numArray == null || numArray.length <=1 ) {
-            return  null;
-        }
-
-        for (int i= 0; i< numArray.length;i++){
-            while (numArray[i] != i ){
-                if(numArray[i] == numArray[numArray[i]]) {
-                    return numArray[i];
-                }else {
-                    Integer team = numArray[i];
-                    numArray[i] = numArray[numArray[i]];
-                    numArray[team] = team;
-
+        /**
+         *  输入一个数据，判断指定数组中是否包含该数据
+         * */
+        public Integer  findRepetitionData(Integer target,Integer[][] numArray){
+            Integer flag = null;
+            if(numArray == null || numArray.length <= 0 || numArray[0] == null ||numArray[0].length <= 0 ) {
+                return  flag;
+            }
+            //思路: 从 右上角 、 （右下角） 进行判断并遍历
+            int row = 0;
+            int col =  numArray[0].length-1;
+            while (true){
+                try {
+                    int res   = target.compareTo(numArray[row][col]);
+                    switch (res){
+                        //  -1  表示目标数 比遍历值小
+                        case -1: col--;break;
+                        case 0: return numArray[row][col];
+                        case 1: row ++;break;
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                   return flag;
                 }
             }
         }
 
-        return  null;
+
+    public boolean  Find(Integer target,Integer[][] numArray){
+        boolean flag = false;
+        if(numArray == null || numArray.length <= 0 || numArray[0] == null ||numArray[0].length <= 0 ) {
+            return  flag;
+        }
+        //思路: 从 右上角 、 （右下角） 进行判断并遍历
+        int row = 0;
+        int col =  numArray[0].length-1;
+        while (true){
+            try {
+                int res   = target.compareTo(numArray[row][col]);
+                switch (res){
+                    //  -1  表示目标数 比遍历值小
+                    case -1: col--;break;
+                    case 0: return true;
+                    case 1: row ++;break;
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+                return flag;
+            }
+
+        }
+
     }
+
+    /**
+     *  这是推荐的代码
+     *
+     * */
+    public boolean Find(int target, int[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
+            return false;
+        int rows = matrix.length, cols = matrix[0].length;
+        int r = 0, c = cols - 1; // 从右上角开始
+        while (r <= rows - 1 && c >= 0) {
+            if (target == matrix[r][c])
+                return true;
+            else if (target > matrix[r][c])
+                r++;
+            else
+                c--;
+        }
+        return false;
+    }
+
 
 }
