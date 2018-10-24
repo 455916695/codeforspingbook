@@ -23,7 +23,7 @@ public class PrintLinked {
             listNode = listNode.next;
         }
 
-        ArrayList<Integer> arrayList = new ArrayList();
+        ArrayList<Integer> arrayList = new ArrayList<>();
         while ( !stack.isEmpty()){
             arrayList.add(stack.pop());
         }
