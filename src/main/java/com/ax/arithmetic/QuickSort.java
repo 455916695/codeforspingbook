@@ -71,6 +71,12 @@ public class QuickSort {
     }
 
 
+
+    /**
+     *  快速排序，也有不同的交换方式
+     * */
+
+
 }
 
 
