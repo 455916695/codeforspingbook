@@ -8,7 +8,8 @@ package com.ax.offer.dataduplication;
  * */
 public class DataDuplication {
     /**
-     *  思路：遍历数组，判断遍历的值是否与被遍历数据的索引值对应，如果相等就进行下一次循环，如果不相等，就判断对应索引上的值是否与本值相等，如果相等就返回，不相等就交换
+     *  思路：遍历数组，判断遍历的值是否与被遍历数据的索引值对应，如果相等就进行下一次循环，
+     *          如果不相等，就判断对应索引上的值是否与本值相等，如果相等就返回，不相等就交换
      *
      * */
     public static  Integer findRepetitionNum(int[] numArray ){
@@ -30,6 +31,10 @@ public class DataDuplication {
             }
         }
 
+        String a = "";
+        char[] chars = a.toCharArray();
+
+        String s = new  String(chars);
         return  null;
     }
 
