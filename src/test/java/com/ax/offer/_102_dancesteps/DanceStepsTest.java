@@ -22,5 +22,14 @@ public class DanceStepsTest {
 
     }
 
+    @Test
+    public void  dancesDTTest() {
+
+        DanceSteps danceSteps = new DanceSteps();
+        int i = danceSteps.dancesDT(2);
+        int i1 = danceSteps.dancesDT(4);
+        Assert.assertEquals(2,i);
+        Assert.assertEquals(5,i1);
+    }
 
 }

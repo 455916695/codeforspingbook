@@ -17,9 +17,19 @@ public class DanceSteps  {
 
 //    迭代思路
     public int dancesDT(int n) {
-        //
+        //思路:跳台阶的问题是可以迭代的
 
-        return 0;
+        if(n <= 2){
+            return n;
+        }
+        int[] means = new int[]{1,2,0};
+
+        for (int i = 3 ; i <= n ;i++){
+            means[2] = means[1]+means[0];
+            means[0] = means[1];
+            means[1] = means[2];
+        }
+        return means[2];
     }
 
 }
