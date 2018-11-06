@@ -21,6 +21,21 @@ public class RadixSortTest {
 
 
     }
+    @Test
+    public void   radixSortForNullTest () {
+
+        int[] array = null;
+
+        try {
+            RadixSort.radixSort(array);
+
+        }catch (Exception e){
+
+        }
+
+
+
+    }
 
 
 }

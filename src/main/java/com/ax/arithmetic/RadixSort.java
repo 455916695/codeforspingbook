@@ -14,6 +14,7 @@ public class RadixSort {
      *  @param  array  数组
      * */
     public static void radixSort(int[] array){
+
         int exp;  //指数，当对数组按个位进行排序时，exp = 1；
         int max = getMax(array);   //获取数组中的最大值
 
