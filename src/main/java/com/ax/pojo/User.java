@@ -3,13 +3,10 @@ package com.ax.pojo;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class User implements Comparator{
 
     int age;
-
-    ConcurrentLinkedQueue concurrentLinkedQueue;
 
     public int compareTo(Object o) {
         User u = null;
