@@ -31,31 +31,29 @@ public class ReflectTest {
         return car;
     }
 
-    public static String[] stringS() throws Throwable {
+    public static String  stringS() throws Throwable {
         //1.通过类装载器获取Car类对象
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
         Class<?> clazz = loader.loadClass("java.lang.String");
         Constructor<?> declaredConstructor = clazz.getDeclaredConstructor((Class) String.class);
 
         String  str = (String) declaredConstructor.newInstance("你好");
-
-        String[] string = new String[2];
-        string[0] = str;
+        System.out.println(str);
 
         Field value = clazz.getDeclaredField("value");
         value.setAccessible(true);
 
         value.set(str,new char[]{'1','2','3'});
-        string[1] = str;
+        System.out.println(str);
 
-        return  string ;
+        return  str ;
     }
 
     public  static void main(String[] args) throws Throwable {
         Car car = initObject();
         car.introduce();
-        String[] s = stringS();
-        System.out.println(s[0] == s[1]);
+        String s = stringS();
+        System.out.println(s);
     }
 
 }

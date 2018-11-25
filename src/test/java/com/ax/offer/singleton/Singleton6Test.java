@@ -1,5 +1,6 @@
 package com.ax.offer.singleton;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Singleton6Test {
@@ -21,4 +22,18 @@ public class Singleton6Test {
 
 
     }
+
+
+    @Test
+    public void Singleton5Test() {
+
+        Singleton5 singleton5 = Singleton5.getSingleton5();
+        Singleton5 singleton6 = Singleton5.getSingleton5();
+        Singleton5 singleton7 = Singleton5.getSingleton5();
+
+        Assert.assertEquals(singleton5,singleton6);
+        Assert.assertEquals(singleton5,singleton7);
+
+    }
+
 }

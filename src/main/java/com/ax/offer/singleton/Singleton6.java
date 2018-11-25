@@ -1,7 +1,5 @@
 package com.ax.offer.singleton;
 
-import org.junit.Test;
-
 /**
  *  一、单例模式
  *      枚举类型
@@ -9,7 +7,6 @@ import org.junit.Test;
 public enum Singleton6 {
 
     INSTANCE;
-
 
     private  String name;
 

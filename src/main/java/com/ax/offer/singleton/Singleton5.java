@@ -6,15 +6,14 @@ package com.ax.offer.singleton;
  *          1.节约了资源
  *          2.由  JVM  提供了线程安全
  * */
-public class Singleton5 {
+public class Singleton5   {  //问题拓展，Singleton5 的派生类也需要实现单例模式，如何操作比较好
 
-    private static  Singleton5 singleton5;
-
-
+    private Singleton5() {
+    }
     /**
      *  当Singleton5 被加载时， 静态内部类并没有被加载
      * */
-    private static  class SingletonCla {
+    private static  class SingletonCla  {
         private final static Singleton5 SINGLETON_5 = new Singleton5();
     }
 

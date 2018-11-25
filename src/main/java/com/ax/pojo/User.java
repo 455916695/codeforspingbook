@@ -11,15 +11,6 @@ public class User implements Comparator{
     public int compareTo(Object o) {
         User u = null;
 
-        HashSet hashSet = new HashSet();
-
-        Iterator iterator = hashSet.iterator();
-
-        while (iterator.hasNext()){
-            iterator.next();
-//            iterator.remove();
-        }
-
         if(o instanceof User) {
             u = (User)o;
         }
