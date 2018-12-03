@@ -1,7 +1,7 @@
 package com.ax.offer2._2_TwoBArray;
 
 /**
- *   二维数组
+ *   二维数组(横、竖 有序的数组，)，查询其是否包含指定的值
  *
  * */
 public class TwoBArray {
