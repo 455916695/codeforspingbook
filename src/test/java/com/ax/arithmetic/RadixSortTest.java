@@ -1,9 +1,7 @@
 package com.ax.arithmetic;
 
-import org.junit.Assert;
+import com.ax.arithmetic._0_sort.RadixSort;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 public class RadixSortTest {
 

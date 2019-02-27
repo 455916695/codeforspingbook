@@ -67,7 +67,7 @@
             <version>4.12</version>
         </dependency>
 
-<!--    webmagic   爬虫 相关依赖    -->
+        <!--    webmagic   爬虫 相关依赖    -->
         <dependency>
             <groupId>us.codecraft</groupId>
             <artifactId>webmagic-core</artifactId>
@@ -90,7 +90,5 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
     </dependencies>
-
 </project>

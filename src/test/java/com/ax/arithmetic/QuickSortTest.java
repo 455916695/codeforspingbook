@@ -1,6 +1,7 @@
 package com.ax.arithmetic;
 
 
+import com.ax.arithmetic._0_sort.QuickSort;
 import org.junit.Assert;
 import org.junit.Test;
 

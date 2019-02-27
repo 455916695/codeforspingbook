@@ -1,11 +1,10 @@
 package com.ax.arithmetic;
 
 
+import com.ax.arithmetic._0_sort.InsertSort;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 public class InsertSortTest {
 

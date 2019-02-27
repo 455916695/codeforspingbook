@@ -22,13 +22,6 @@ public class QuickSort {
             return array;
         }
 
-//        这行不加  好像也可以
-//        if(oldHigh -oldLow == 1) {
-//            if(array[oldLow].compareTo(array[oldHigh]) > 0){
-//                swap(array,oldLow,oldHigh);
-//            }
-//        }
-
         int index = oldLow + (int) (Math.random()*(oldHigh-oldLow));
         swap(array,index,oldLow);
 

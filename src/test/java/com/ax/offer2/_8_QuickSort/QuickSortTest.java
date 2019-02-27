@@ -8,7 +8,7 @@ public class QuickSortTest {
     public void  quickSortTest() {
         QuickSort quickSort = new QuickSort();
 
-        Integer[] array = {8,3,4,9,2,8,100,9,3,4,5,4,6,9,7,8,9,9,2,1,3,10};
+        Integer[] array = {1,2,3,2,2,2,2,2,4};
 
         quickSort.quickSort(array);
 
