@@ -44,7 +44,7 @@ class SingletonTwo {
 
 class SingletonThree {
 
-    private volatile SingletonThree singletonThree;
+    private volatile SingletonThree singletonThree;  //volatile
 
     private SingletonThree() {
     }
@@ -61,7 +61,7 @@ class SingletonThree {
     }
 }
 
-class SingletonFour {
+class SingletonFour {  //创建一个静态内部类，在静态内部类中创建一个常量
 
     private SingletonFour() {
     }
