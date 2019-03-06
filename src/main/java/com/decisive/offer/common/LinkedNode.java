@@ -36,4 +36,14 @@ public class LinkedNode {
     public void setNext(LinkedNode next) {
         this.next = next;
     }
+
+
+    public void print() {
+        System.out.println(data);
+        LinkedNode temp = next;
+        while (temp != null) {
+            System.out.println(temp.getData());
+            temp = temp.getNext();
+        }
+    }
 }
