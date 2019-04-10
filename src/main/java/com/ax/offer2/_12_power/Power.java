@@ -1,7 +1,7 @@
 package com.ax.offer2._12_power;
 
 /**
- *   实现函数  double Power(double base,int  exponent)
+ *   实现函数  double Power(double interfacepackage,int  exponent)
  *          1.求base的exponent 次方
  *          2.不考虑数据过大的情况
  *          3.不能调用 库 内方法

@@ -1,7 +1,7 @@
 package com.decisive.offer.test5;
 
 
-import com.decisive.offer.common.LinkedNode;
+import com.decisive.common.LinkedNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

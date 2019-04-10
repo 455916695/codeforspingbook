@@ -1,6 +1,6 @@
 package com.decisive.offer.test5;
 
-import com.decisive.offer.common.LinkedNode;
+import com.decisive.common.LinkedNode;
 
 import java.util.ArrayList;
 import java.util.Stack;

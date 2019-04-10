@@ -1,6 +1,6 @@
 package com.decisive.offer.test21;
 
-import com.decisive.offer.common.LinkedNode;
+import com.decisive.common.LinkedNode;
 
 /**
  * 删除重复数据

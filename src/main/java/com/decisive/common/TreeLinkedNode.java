@@ -1,4 +1,4 @@
-package com.decisive.offer.common;
+package com.decisive.common;
 
 /**
  *  二叉树：包含父节点

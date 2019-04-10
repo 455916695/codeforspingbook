@@ -1,6 +1,6 @@
 package com.decisive.offer.test6;
 
-import com.decisive.offer.common.TreeNode;
+import com.decisive.common.TreeNode;
 
 import java.util.HashMap;
 

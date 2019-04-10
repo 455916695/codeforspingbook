@@ -1,6 +1,6 @@
 package com.decisive.offer.test7;
 
-import com.decisive.offer.common.TreeLinkedNode;
+import com.decisive.common.TreeLinkedNode;
 
 /**
  * 给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。

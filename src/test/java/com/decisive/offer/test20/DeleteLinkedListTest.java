@@ -1,7 +1,7 @@
 package com.decisive.offer.test20;
 
 
-import com.decisive.offer.common.LinkedNode;
+import com.decisive.common.LinkedNode;
 import org.junit.Before;
 import org.junit.Test;
 

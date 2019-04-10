@@ -33,6 +33,9 @@ public class WebMagicTest implements PageProcessor {
     public static void main(String[] args) {
         Spider.create(new WebMagicTest()).addUrl("https://github.com/455916695/codeforspingbook.git").thread(5).run();
     }
+
+
+
 }
 
 

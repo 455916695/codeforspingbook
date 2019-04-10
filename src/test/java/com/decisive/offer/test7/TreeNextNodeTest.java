@@ -1,7 +1,7 @@
 package com.decisive.offer.test7;
 
 
-import com.decisive.offer.common.TreeLinkedNode;
+import com.decisive.common.TreeLinkedNode;
 import org.junit.Assert;
 import org.junit.Test;
 

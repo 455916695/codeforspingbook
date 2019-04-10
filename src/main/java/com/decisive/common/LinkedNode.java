@@ -1,4 +1,4 @@
-package com.decisive.offer.common;
+package com.decisive.common;
 
 public class LinkedNode {
 

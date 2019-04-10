@@ -1,8 +1,6 @@
 package com.decisive.offer.test20;
 
-import com.decisive.offer.common.LinkedNode;
-
-import java.util.LinkedList;
+import com.decisive.common.LinkedNode;
 
 /**
  * 在O(1)时间内删除链表节点
