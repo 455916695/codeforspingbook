@@ -11,7 +11,7 @@ public class PlainStrTest {
 
         PlainStr ps = new PlainStr();
 
-        boolean palindrome = ps.isPalindrome("A   c a");
+        boolean palindrome = ps.isPalindrome("A   ArraySet a");
         palindrome = ps.isPalindrome("A man, a plan, a canal: Panama");
 
         Assert.assertTrue(palindrome);

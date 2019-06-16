@@ -8,6 +8,10 @@ import java.lang.reflect.Proxy;
  * 动态代理
  * 使用案例
  */
+/**
+ *  Handler更想是一个编织器，将业务逻辑与横切逻辑 整合的 编织器
+ *
+ * */
 public class DynamicProxyHandler implements InvocationHandler {
 
     private Object proxied;   // 个人估计----这是被代理对象

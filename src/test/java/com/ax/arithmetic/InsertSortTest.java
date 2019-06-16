@@ -50,7 +50,7 @@ public class InsertSortTest {
     public void insertSortDecStringTest() {
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("A");
-        arrayList.add("c");
+        arrayList.add("ArraySet");
         arrayList.add("B");
         arrayList.add("D");
         arrayList.add("Z");
